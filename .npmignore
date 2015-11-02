@@ -1,0 +1,14 @@
+# dotfiles
+.codeclimate.yml
+.editorconfig
+.eslintignore
+.eslintrc
+.gitattributes
+.gitignore
+.npmignore
+.nvmrc
+.travis.yml
+
+# dirs
+coverage/
+test/

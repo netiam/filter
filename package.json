@@ -1,0 +1,44 @@
+{
+  "name": "netiam-filter",
+  "description": "A query language for filtering",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "./bin/build",
+    "clean": "./bin/clean",
+    "lint": "./bin/lint",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "start": "npm run watch",
+    "test": "npm run test:unit",
+    "test:unit": "mocha",
+    "test:coverage": "istanbul cover _mocha --report lcovonly -- -R spec",
+    "watch": "./bin/watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/netiam/filter.git"
+  },
+  "keywords": [
+    "Filter",
+    "OData",
+    "Query Language"
+  ],
+  "author": "Hannes Moser <hannes@impossiblearts.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/netiam/filter/issues"
+  },
+  "homepage": "https://github.com/netiam/filter#readme",
+  "devDependencies": {
+    "babel": "^5.8.9",
+    "babel-eslint": "^4.0.5",
+    "codeclimate-test-reporter": "^0.1.0",
+    "eslint": "^0.24.1",
+    "istanbul": "^0.3.17",
+    "mocha": "^2.2.5",
+    "semantic-release": "^4.3.4",
+    "should": "^7.0.2"
+  },
+  "dependencies": {
+    "netiam-errors": "^1.10.1"
+  }
+}
