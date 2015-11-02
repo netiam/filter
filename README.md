@@ -7,5 +7,9 @@
 > A query language for filtering
 
 ```http
-?filter=a EQ b AND c EQ d
+a EQ b AND c EQ d OR (e GE f)
 ```
+
+## License
+
+[MIT License](https://opensource.org/licenses/MIT)
