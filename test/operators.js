@@ -1,4 +1,4 @@
-const filter = require('../lib/index').default
+import filter from '../src/index'
 
 describe('Operators', () => {
 
