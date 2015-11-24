@@ -30,6 +30,8 @@
   "homepage": "https://github.com/netiam/filter#readme",
   "devDependencies": {
     "babel-cli": "^6.1.2",
+    "babel-plugin-syntax-async-functions": "^6.0.14",
+    "babel-plugin-transform-async-to-generator": "^6.0.14",
     "babel-eslint": "^4.1.6",
     "babel-preset-es2015-node5": "^1.1.0",
     "codeclimate-test-reporter": "^0.1.1",
