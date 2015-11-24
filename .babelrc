@@ -2,10 +2,6 @@
   "ignore": [
     "src/parser.js"
   ],
-  "plugins": [
-    "transform-async-to-generator",
-    "syntax-async-functions"
-  ],
   "presets": [
     "es2015-node5"
   ]
