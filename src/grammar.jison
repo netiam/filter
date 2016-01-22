@@ -1,4 +1,4 @@
-/* Description: Filter Query Grammar */
+/* Description: Query Filter Grammar */
 
 /* lexical grammar */
 %lex
@@ -19,6 +19,7 @@
 "Or"                             return 'Or';
 /* Search */
 "Lk"                             return 'Lk';
+"Nl"                             return 'Nl';
 /* Grouping operators */
 "("                              return '(';
 ")"                              return ')';
@@ -40,7 +41,7 @@
 %left 'Eq' 'Ne'
 %left 'Lt' 'Le'
 %left 'Gt' 'Ge'
-%left 'Lk'
+%left 'Lk' 'Nl'
 
 %start expressions
 
@@ -96,6 +97,8 @@ e
     | e 'Or' e
         { $$ = new yy.Expression($2, $1, $3) }
     | e 'Lk' e
+        { $$ = new yy.Expression($2, $1, $3) }
+    | e 'Nl' e
         { $$ = new yy.Expression($2, $1, $3) }
     /* Types */
     | NULL

@@ -1,4 +1,6 @@
 import identifier from './identifier'
+import fn from './function'
+import ast from '../ast'
 
 /**
  * Expression
@@ -8,7 +10,11 @@ import identifier from './identifier'
  * @param {String} expr.right
  * @returns {*}
  */
-export default function expression(expr) {
+export default function(expr) {
+  if (expr instanceof ast.Function) {
+    return fn(expr)
+  }
+
   let lft = identifier(expr.left)
   let rgt = identifier(expr.right)
   let e
@@ -46,7 +52,11 @@ export default function expression(expr) {
     // Search operators
     case 'lk':
       e = {}
-      e[lft] = new RegExp(rgt, 'i')
+      e[lft] = rgt
+      return e
+    case 'nl':
+      e = {}
+      e[lft] = rgt
       return e
   }
 }

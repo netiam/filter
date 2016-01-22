@@ -18,7 +18,6 @@ export default class Filter {
     if (!this.query) {
       return {}
     }
-
     return expression(parser.parse(this.query))
   }
 

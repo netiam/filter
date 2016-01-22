@@ -1,4 +1,5 @@
 import expression from './expression'
+import fn from './function'
 import ast from '../ast'
 
 /**
@@ -7,12 +8,11 @@ import ast from '../ast'
  * @param {*} type.id
  * @returns {*}
  */
-export default function identifier(type) {
+export default function(type) {
   if (type instanceof ast.Expression) {
     return expression(type)
   } else if (type instanceof ast.Function) {
-    console.warn('Functions are not supported at the moment')
-    return true
+    return fn(type)
   } else if (type instanceof ast.Identifier) {
     return type.id
   } else {

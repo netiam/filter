@@ -3,7 +3,8 @@
 #
 
 # compile
-npm run clean &&
-npm run lint &&
-babel --optional runtime -L -e 1 -d ./lib ./src &&
-jison src/grammar.jison -m commonjs -o lib/parser.js
+npm run clean
+npm run lint
+babel --optional runtime -L -e 1 -d ./lib ./src
+jison src/grammar.jison -m commonjs -o src/parser.js
+cp src/parser.js lib/parser.js
