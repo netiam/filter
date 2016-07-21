@@ -137,4 +137,23 @@ export default class Filter {
   le(q) {
     return this.logical(q, 'le')
   }
+
+  /**
+   * Op: lk
+   * @param q
+   * @return Filter
+   */
+  lk(q) {
+    return this.logical(q, 'lk')
+  }
+
+
+  /**
+   * Op: nl
+   * @param q
+   * @return Filter
+   */
+  nl(q) {
+    return this.logical(q, 'nl')
+  }
 }

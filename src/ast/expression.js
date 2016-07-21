@@ -52,11 +52,11 @@ export default function(expr) {
     // Search operators
     case 'lk':
       e = {}
-      e[lft] = rgt
+      e[lft] = {$like: rgt}
       return e
     case 'nl':
       e = {}
-      e[lft] = rgt
+      e[lft] = {$notLike: rgt}
       return e
   }
 }
