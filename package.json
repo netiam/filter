@@ -35,12 +35,12 @@
     "babel-plugin-transform-async-to-generator": "^6.0.14",
     "babel-preset-es2015-node5": "^1.1.0",
     "codeclimate-test-reporter": "^0.3.2",
-    "eslint": "^2.4.0",
+    "eslint": "^3.0.0",
     "istanbul": "^0.4.0",
     "jison": "^0.4.15",
-    "mocha": "^2.3.3",
+    "mocha": "^2.5.0",
     "semantic-release": "^4.3.5",
-    "should": "^9.0.0"
+    "should": "^10.0.0"
   },
   "dependencies": {
     "lodash": "^4.0.0"
