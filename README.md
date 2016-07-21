@@ -10,6 +10,14 @@
 a EQ b AND c EQ d OR (e GE f)
 ```
 
+## Like
+
+Use `%` in combination with like to search for a substring:
+
+```http
+a LK 'test%'
+```
+
 ## License
 
 [MIT License](https://opensource.org/licenses/MIT)
