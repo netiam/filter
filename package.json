@@ -39,7 +39,7 @@
     "istanbul": "^1.0.0-alpha.2",
     "jison": "^0.4.15",
     "mocha": "^3.0.0",
-    "semantic-release": "^4.3.5",
+    "semantic-release": "^6.3.2",
     "should": "^11.1.0"
   },
   "dependencies": {
