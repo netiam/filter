@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/netiam/filter#readme",
   "devDependencies": {
-    "babel-cli": "^6.2.0",
+    "babel-cli": "^6.18.0",
     "babel-eslint": "^7.0.0",
     "babel-plugin-syntax-async-functions": "^6.1.18",
     "babel-plugin-transform-async-to-generator": "^6.0.14",
